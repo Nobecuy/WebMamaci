@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  margin-bottom: 20rem;
 }
 
 .hover-underline {
@@ -83,7 +84,6 @@ body {
 .cochip {
   width: 80px;
   height: auto;
-  object-fit: contain;
   position: absolute;
   top: -40px;
   left: 50%;
@@ -112,8 +112,6 @@ body {
   border-radius: 20px;
   margin: auto;
   overflow: visible;
-  aspect-ratio: 0 / 0;
-  border: 1px solid #000;
 }
 
 .product .card-body {
@@ -128,10 +126,6 @@ body {
   bottom: 20%;
 }
 
-.product .kard2 {
-  margin-top: 5rem;
-}
-
 .eat {
   max-width: 100%;
   height: auto;
@@ -139,13 +133,34 @@ body {
   max-height: 478px;
 }
 
-.GP {
-  margin-left: 5rem;
-}
-
 .juga {
   color: #78ae34;
 }
+
+.gallery {
+  margin-top: 10rem;
+}
+
+.main-image {
+  width: 75%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.thumbnail-img {
+  width: 80%;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.thumb-container {
+  max-width: 120px;
+}
+.maci{
+  color: #78ae34;
+}
+
 
 
 /* animation */
@@ -161,3 +176,11 @@ body {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+
+.thumbnail-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+
+

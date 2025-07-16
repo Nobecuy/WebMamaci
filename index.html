@@ -245,6 +245,45 @@
       </div>
     </div>
 
+    <!-- Gallery -->
+    <div class="gallery container">
+    <div class="row gx-1">
+      <!-- Gambar besar di kiri -->
+      <div class="col-md-7">
+        <img id="mainImage" src="Pict/coklat.jpg" class="main-image img-fluid" alt="Main Image">
+      </div>
+
+      <!-- Thumbnails di kanan -->
+      <div class="col-md-5 d-flex flex-column">
+        <!-- Thumbnail -->
+        <div class="thumb-container mb-3">
+          <img src="Pict/coklat.jpg" class="thumbnail-img img-fluid" onclick="changeImage(this)">
+        </div>
+        <div class="thumb-container mb-3">
+          <img src="Pict/maca.jpg" class="thumbnail-img img-fluid" onclick="changeImage(this)">
+        </div>
+        <div class="thumb-container mb-3">
+          <img src="Pict/banana.jpg" class="thumbnail-img img-fluid" onclick="changeImage(this)">
+        </div>
+        <div class="thumb-container mb-3">
+          <img src="Pict/Rev.jpg" class="thumbnail-img img-fluid" onclick="changeImage(this)">
+        </div>
+
+        <!-- Judul dan deskripsi -->
+        <div class="col-7 mt-5 ">
+          <div class="d-flex gap-2">
+          <h5><strong>CoChip</strong></h5>
+          <h5 class="maci"><strong>Mamaci</strong></h5>
+          </div>
+
+          <p class="text-muted" style="width: 400px;">
+            Snack renyah kekinian yang bikin nagih dari gigitan pertama. Cocok buat temani kerja atau santai sore.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+      <script src="script.js"></script>
     <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
