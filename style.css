@@ -81,6 +81,7 @@ body {
 .product {
   margin-top: 10rem;
 }
+
 .cochip {
   width: 80px;
   height: auto;
@@ -162,8 +163,57 @@ body {
 }
 
 
+  .hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.box {
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.comen {
+  height: 478px;
+  width: 478px;
+  max-width: 100%;
+  height: auto;
+}
+
+.cmn {
+  width: 190px;
+  height: 55px;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.comment-box {
+  margin-top: 7rem;
+}
+
+.contact {
+  margin-top: 10rem;
+}
+
+.contact .us {
+  color: #78ae34;
+}
+
+
 
 /* animation */
+
+
 
 .kard {
   transition: all 0.3s ease;
