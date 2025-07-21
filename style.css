@@ -1,6 +1,5 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin-bottom: 20rem;
 }
 
 .hover-underline {
@@ -23,7 +22,7 @@ body {
   width: 100%;
 }
 
-.navvv .mamaci {
+.mamaci {
   height: 62px;
 }
 
@@ -209,6 +208,17 @@ body {
   color: #78ae34;
 }
 
+
+.contactimg {
+    height: 478px;
+  width: 478px;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  height: 452px;
+}
 
 
 /* animation */

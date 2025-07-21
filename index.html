@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Mamaci</title>
   </head>
@@ -18,7 +19,7 @@
         <a class="navbar-brand d-flex align-items-center" href="#">
           <i class="fas fa-store me-2"></i>
           <!-- Ikon toko -->
-          <img class="mamaci" src="Pict/mamaci.png" alt="mamaci icon" />
+          <img style="height: 62px;" class="mamaci" src="Pict/mamaci.png" alt="mamaci icon" />
           <h1>Mamaci</h1>
         </a>
 
@@ -50,7 +51,7 @@
               <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item hover-underline text-dark text-decoration-none">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#contactUs">Contact Us</a>
             </li>
           </ul>
 
@@ -77,7 +78,12 @@
     <div class="home" id="home">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="col-md-6"
+          >
             <h2>Rasa Yang Berbicara Sendiri</h2>
             <p>
               Cochip hadir dengan kualitas dan rasa terbaik untuk pengalaman
@@ -89,7 +95,13 @@
               </button>
             </a>
           </div>
-          <div class="col-md-6">
+          <div
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+            class="col-md-6"
+          >
             <img class="chef" src="Pict/female chef-rafiki.png" alt="chef" />
           </div>
         </div>
@@ -100,14 +112,20 @@
     <div class="AboutUs" id="aboutus">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="col-md-6"
+            class="col-md-6"
+          >
             <img
               class="about img-fluid"
               src="Pict/About us page-rafiki.png"
               alt="about us"
             />
           </div>
-          <div class="col-md-6">
+          <div data-aos="fade-up-left" class="col-md-6">
             <div class="d-flex gap-1 flex-warp">
               <h2>About</h2>
               <h2 class="us">Us</h2>
@@ -131,7 +149,7 @@
         <div class="prd row align-items-center">
           <div class="col-md-6">
             <div class="row">
-              <div class="col-6 col-sm-4 col-md-4 mb-4">
+              <div data-aos="zoom-in" class="col-6 col-sm-4 col-md-4 mb-4">
                 <div class="kard card border-dark text-center">
                   <img class="cochip" src="Pict/cochip.png" alt="cochip" />
                   <div class="title card-body">
@@ -147,7 +165,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-4 col-md-4 mb-4">
+              <div data-aos="zoom-in" class="col-6 col-sm-4 col-md-4 mb-4">
                 <div class="kard card border-dark text-center">
                   <img
                     class="cochip"
@@ -167,7 +185,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-4 col-md-4 mb-4">
+              <div data-aos="zoom-in" class="col-6 col-sm-4 col-md-4 mb-4">
                 <div class="kard card border-dark text-center">
                   <img
                     class="cochip"
@@ -187,7 +205,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-4 col-md-4 mb-4 offset-md-2">
+              <div
+                data-aos="zoom-in"
+                class="col-6 col-sm-4 col-md-4 mb-4 offset-md-2"
+              >
                 <div class="kard card border-dark text-center mt-5">
                   <img
                     class="cochip"
@@ -207,7 +228,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-4 col-md-4 mb-4">
+              <div data-aos="zoom-in" class="col-6 col-sm-4 col-md-4 mb-4">
                 <div class="kard card border-dark text-center mt-5">
                   <img
                     class="cochip"
@@ -229,7 +250,7 @@
               </div>
             </div>
           </div>
-          <div class="GP col-md-5">
+          <div data-aos="fade-up-left" class="GP col-md-5">
             <div class="d-flex gap-1 flex-warp">
               <h2>Beli Sekarang</h2>
               <h2 class="juga">Jugaa!</h2>
@@ -250,7 +271,7 @@
     <div class="gallery container" id="gallery">
       <div class="row gx-1">
         <!-- Gambar besar di kiri -->
-        <div class="col-md-7">
+        <div data-aos="fade-right" class="col-md-7">
           <img
             id="mainImage"
             src="Pict/coklat.jpg"
@@ -260,7 +281,7 @@
         </div>
 
         <!-- Thumbnails di kanan -->
-        <div class="col-md-5 d-flex flex-column">
+        <div data-aos="zoom-in-left" class="col-md-5 d-flex flex-column">
           <!-- Thumbnail -->
           <div class="thumb-container mb-3">
             <img
@@ -269,21 +290,21 @@
               onclick="changeImage(this)"
             />
           </div>
-          <div class="thumb-container mb-3">
+          <div data-aos="zoom-in-left" class="thumb-container mb-3">
             <img
               src="Pict/maca.jpg"
               class="thumbnail-img img-fluid"
               onclick="changeImage(this)"
             />
           </div>
-          <div class="thumb-container mb-3">
+          <div data-aos="zoom-in-left" class="thumb-container mb-3">
             <img
               src="Pict/banana.jpg"
               class="thumbnail-img img-fluid"
               onclick="changeImage(this)"
             />
           </div>
-          <div class="thumb-container mb-3">
+          <div data-aos="zoom-in-left" class="thumb-container mb-3">
             <img
               src="Pict/Rev.jpg"
               class="thumbnail-img img-fluid"
@@ -292,7 +313,7 @@
           </div>
 
           <!-- Judul dan deskripsi -->
-          <div class="col-7 mt-5">
+          <div data-aos="fade-up-left" class="col-7 mt-5">
             <div class="d-flex gap-2">
               <h5><strong>CoChip</strong></h5>
               <h5 class="maci"><strong>Mamaci</strong></h5>
@@ -308,10 +329,11 @@
     </div>
 
     <!-- Komentar -->
-         <div class="comment-box">
+    <div class="comment-box">
       <div class="container">
         <div class="row align-items-center">
           <div
+            data-aos="zoom-in-right"
             class="col-md-6 d-flex flex-column justify-content-end"
             style="max-height: 478px"
           >
@@ -320,14 +342,18 @@
               alt="commentar"
               class="comen img-fluid mb-2"
             />
-            <a href="#" class="nav-link align-item-center">
+            <a
+              href="#"
+              data-aos="zoom-out-up"
+              class="nav-link align-item-center"
+            >
               <button type="button" class="cmn btn btn-outline-dark mb-3">
                 <strong>Add Comment</strong>
               </button>
             </a>
           </div>
           <!-- Bagian kanan kolom komentar -->
-          <div class="col-md-6 box py-4">
+          <div data-aos="zoom-in-left" class="col-md-6 box py-4">
             <!-- Judul TIDAK ikut scroll -->
             <h1 class="text-center mb-4 fw-bold">Comment</h1>
 
@@ -520,23 +546,155 @@
     </div>
 
     <!-- Contact -->
-    <div class="contact">
-      <div class="col-md-6 col offset-md-1">
-            <div class="d-flex gap-1 flex-warp">
-              <h2>
-                <strong>
-                  Contact
-                </strong>
-              </h2>
-              <h2 class="us">
-                <strong>
-                  Us
-                </strong>
-              </h2>
+    <div class="contact" id="contactUs">
+      <div data-aos="zoom-in-right" class="col-md-6 col offset-md-1">
+        <div class="d-flex gap-1 flex-warp">
+          <h2>
+            <strong> Contact </strong>
+          </h2>
+          <h2 class="us">
+            <strong> Us </strong>
+          </h2>
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <div class="row">
+          <!-- Kolom Kiri: Form (besar) -->
+          <div data-aos="zoom-in-right" class="col-lg-8">
+            <!-- Box Form -->
+            <div class="p-4 border rounded">
+              <!-- Judul -->
+              <h3>Get <span style="color: #78ae34">In</span> Touch</h3>
+              <hr />
+
+              <!-- Form Input -->
+              <div class="row mb-3 mt-5">
+                <div class="col-md-6">
+                  <label for="name" class="form-label fw-bold">Name</label>
+                  <input
+                    type="text"
+                    class="form-control rounded-pill"
+                    id="name"
+                    placeholder="Enter Your Name*"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="Tlp" class="form-label fw-bold"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control rounded-pill"
+                    id="Tlp"
+                    placeholder="Enter Your Phone Number*"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Email</label>
+                <input
+                  type="text"
+                  class="form-control rounded-pill"
+                  id="email"
+                  placeholder="Enter Your Email*"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label fw-bold"
+                  >Your Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="8"
+                  placeholder="Enter Your Message*"
+                ></textarea>
+              </div>
+
+              <!-- Tombol Kirim -->
+              <button class="btn btn-dark rounded-pill">Send</button>
             </div>
+          </div>
+
+          <!-- Kolom Kanan: Informasi Kontak -->
+          <div data-aos="zoom-in-left" class="col-lg-4">
+            <div class="p-4 border rounded mb-4">
+              <h5><span style="color: #78ae34">Contact</span> Information</h5>
+              <hr />
+              <!-- Ikon Sosial Media -->
+              <div class="mb-2"><i class="fab fa-instagram"></i> Instagram</div>
+              <div class="mb-2"><i class="fab fa-tiktok"></i> TikTok</div>
+              <div class="mb-2"><i class="fas fa-envelope"></i> Email</div>
+              <div class="mb-2"><i class="fas fa-phone"></i> Phone</div>
+            </div>
+
+            <!-- Ilustrasi/Gambar tambahan -->
+            <div data-aos="zoom-in-left" class="text-center">
+              <img
+                src="Pict/Contact us-bro.png"
+                alt="contact us"
+                class="contactimg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Footer -->
+    <div class="footer text-white" style="background-color: black">
+      <div class="container">
+        <div class="row align-item-center">
+          <div style="margin-top: 5rem" class="col-md-5">
+            <small>FAQ</small>
+            <p class="mt-2">CoChip itu apa sih?</p>
+            <p>CoChip halal gak?</p>
+            <p>Ada berapa varian rasa?</p>
+            <p>CoChip tahan berapa lama?</p>
+            <p>CoChip bisa kirim ke luar kota?</p>
+            <p>Cocok buat orang diet gak?</p>
+          </div>
+          <div style="margin-top: 5rem" class="col-md-2 offset-md-2">
+            <small>Site Map</small>
+            <p class="mt-2">Home Page</p>
+            <p>Contact Us</p>
+            <p>Comment</p>
+            <p>About Us</p>
+            <p>Product</p>
+            <p>Gallery</p>
+          </div>
+          <div style="margin-top: 5rem" class="col-md-3">
+            <strong>
+              <img class="mamaci" src="Pict/mamaci.png" alt="" /> Mamaci
+            </strong>
+            <p class="mt-5">
+              Maamci adalah kreator di balik Cochip — snack renyah dengan rasa
+              dan karakter unik. Kami percaya, ngemil bukan cuma soal lapar,
+              tapi soal menikmati momen kecil dengan cara yang seru.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <small
+        class="d-block text-center"
+        style="background-color: black; color: white"
+        >Copyright @ 2025</small
+      >
+    </footer>
     <script src="script.js"></script>
     <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
